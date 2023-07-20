@@ -2,13 +2,13 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>CloneMA</title>
+  <title>WebLight</title>
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
   <div id="main-container">
     <div id="header">
-      <h1>CloneMA</h1>
+      <h1>WebLight</h1>
     </div>
     <div id="content">
       <div id="left">
@@ -50,15 +50,22 @@
         <div class="workspace" id="setupWindow">
           <button class="closeButton" onclick="closeSetupWindow()">X</button>
           <h2 class="text-white">Setup Window</h2>
-          <button class="actionButtonSetup">Patch</button>
+          <button class="actionButtonSetup" onclick="togglePatchWindow()">Patch</button>
           <button class="actionButtonSetup">Backup</button>
           <button class="actionButtonSetup"><a href="./locked.html">Lock</a></button>
         </div>
         <div class="workspace" id="helpWindow">
           <button class="closeButton" onclick="closeHelpWindow()">X</button>
           <h2 class="text-white">Help Window</h2>
-          <p class="text-white">CloneMA, a GrandMA2/3 clone made with HTML, CSS and Javascript. You can find the full docs on the <a href="https://github.com/AkaMikeee" target="_blank">github</a></p>
+          <p class="text-white">WebLight, a virtual light console program made with HTML, CSS and Javascript. You can find the full docs on the <a href="https://github.com/AkaMikeee" target="_blank">github</a></p>
         </div>
+
+        <div class="workspace" id="patchWindow">
+          <button class="closeButton" onclick="closePatchWindow()">X</button>
+          <h2 class="text-white">Patch Fixtures</h2>
+          <p class="text-white">Patching fixtures is not available yet.</p>
+        </div>
+
       </div>
       <div id="right">
         <div class="button-row">

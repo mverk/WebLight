@@ -47,6 +47,27 @@ function closeHelpWindow() {
   helpWindowVisible = false;
 }
 
+let patchWindowVisible = false;
+
+function togglePatchWindow() {
+  const patchWindow = document.getElementById('patchWindow');
+
+  if (patchWindowVisible) {
+    patchWindow.style.display = 'none';
+  } else {
+    patchWindow.style.display = 'block';
+    closeSetupWindow();
+  }
+
+  patchWindowVisible = !patchWindowVisible;
+}
+
+function closePatchWindow() {
+  const patchWindow = document.getElementById('patchWindow');
+  patchWindow.style.display = 'none';
+  patchWindowVisible = false;
+}
+
 
 
 let selectedSequence = null;

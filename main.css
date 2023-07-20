@@ -147,6 +147,18 @@ body {
     z-index: 2;
   }
 
+  #patchWindow {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+
   #content {
     flex: 1;
     display: flex;

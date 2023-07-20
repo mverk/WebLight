@@ -1,3 +1,5 @@
+<img src="https://primary.jwwb.nl/public/l/o/q/temp-tixxszvllhaqqpyikuaa/20qhbe/weblight_controller.png?enable-io=true&enable=upscale&width=980">
+
 # WebLight
 Virtual DMX light console made with HTML, CSS and JavaScript.
 

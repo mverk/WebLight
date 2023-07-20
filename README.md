@@ -13,3 +13,6 @@ Probably not. This is just a virtual console and creating actual software that c
 
 #### Will you ever create an actual EXE of the virtual console?
 Probably yes. I really want it to be a executable game/application. After I finished the Web version, I'll start working on an actual EXE.
+
+# How to use
+You will find a full guide how to use the WebLight Console in the WiKi of this github page

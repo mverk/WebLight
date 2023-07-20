@@ -89,19 +89,18 @@
         </div>
         <br>
         <div class="button-row">
-          <button class="actionButton">Dimmer</button>
-          <button class="actionButton">Beam</button>
-          <button class="actionButton">Pan</button>
+          <button class="actionButton" onclick="toggleDimmer()" id="dimmerButton" disabled>Dimmer</button>
+          <button class="actionButton" onclick="toggleBeam()" id="beamButton" disabled>Beam</button>
+          <button class="actionButton" onclick="togglePan()" id="panButton" disabled>Pan</button>
         </div>
         <div class="button-row">
-          <button class="actionButton">Tilt</button>
-          <button class="actionButton">Color</button>
-          <button class="actionButton">Gobo</button>
+          <button class="actionButton" onclick="toggleTilt()" id="tiltButton" disabled>Tilt</button>
+          <button class="actionButton" onclick="toggleColor()" id="colorButton" disabled>Color</button>
+          <button class="actionButton" onclick="toggleGobo()" id="goboButton" disabled>Gobo</button>
         </div>
       </div>
     </div>
 
-    <!-- Typing Bar -->
     
   </div>
   <script src="script.js"></script>

@@ -52,7 +52,7 @@
           <h2 class="text-white">Setup Window</h2>
           <button class="actionButtonSetup">Patch</button>
           <button class="actionButtonSetup">Backup</button>
-          <button class="actionButtonSetup">Quit</button>
+          <button class="actionButtonSetup"><a href="./locked.html">Lock</a></button>
         </div>
         <div class="workspace" id="helpWindow">
           <button class="closeButton" onclick="closeHelpWindow()">X</button>
@@ -68,19 +68,28 @@
         </div>
         <br>
         <div class="button-row">
-          <button class="actionButton" onclick="insertSequence()">Sequ</button>
-          <button class="actionButton">Cue</button>
           <button class="actionButton" onclick="insertGoTo()">GoTo</button>
+          <button class="actionButton" onclick="insertFixture()">Fixture</button>
         </div>
         <div class="button-row">
-          <button class="actionButton">Channel</button>
-          <button class="actionButton" onclick="insertFixture()">Fixture</button>
-          <button class="actionButton">Group</button>
+
+          
         </div>
         <div class="button-row">
           <button class="actionButton">Oops</button>
           <button class="actionButton" onclick="clearSequence()">Clear</button>
           <button class="actionButton">Update</button>
+        </div>
+        <br>
+        <div class="button-row">
+          <button class="actionButton">Dimmer</button>
+          <button class="actionButton">Beam</button>
+          <button class="actionButton">Pan</button>
+        </div>
+        <div class="button-row">
+          <button class="actionButton">Tilt</button>
+          <button class="actionButton">Color</button>
+          <button class="actionButton">Gobo</button>
         </div>
       </div>
     </div>

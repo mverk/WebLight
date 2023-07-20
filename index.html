@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CloneMA</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div id="main-container">
+    <div id="header">
+      <h1>CloneMA</h1>
+    </div>
+    <div id="content">
+      <div id="left">
+        <div class="workspace" id="sequenceWindow">
+          <button class="titleButton" disabled>Sequ</button>
+          <br><br>
+          <div class="button-row">
+            <button class="sequenceButton">Seq1</button>
+            <button class="sequenceButton">Seq2</button>
+            <button class="sequenceButton">Seq3</button>
+            <button class="sequenceButton">Seq4</button>
+            <button class="sequenceButton">Seq5</button>
+            <button class="sequenceButton">Seq6</button>
+          </div>
+          <div class="button-row">
+            <button class="sequenceButton">Seq7</button>
+            <button class="sequenceButton">Seq8</button>
+            <button class="sequenceButton">Seq9</button>
+            <button class="sequenceButton">Seq10</button>
+            <button class="sequenceButton">Seq11</button>
+            <button class="sequenceButton">Seq12</button>
+          </div>
+        </div><br>
+
+        <div class="workspace" id="fixtureWindow">
+          <button class="titleButton" disabled>Fixt</button>
+          <br><br>
+          <div class="button-row">
+            <button class="fixtureButton">101</button>
+          </div>
+        </div>
+
+        <div class="typingBar">
+          <p class="text-white">Admin >>> </p><input id="typerInput" type="text" placeholder="Command prompt">
+          <button class="actionButton" onclick="typerFunction()">Send</button>
+        </div>
+      </div>
+      <div id="middle">
+        <div class="workspace" id="setupWindow">
+          <button class="closeButton" onclick="closeSetupWindow()">X</button>
+          <h2 class="text-white">Setup Window</h2>
+          <button class="actionButtonSetup">Patch</button>
+          <button class="actionButtonSetup">Backup</button>
+          <button class="actionButtonSetup">Quit</button>
+        </div>
+        <div class="workspace" id="helpWindow">
+          <button class="closeButton" onclick="closeHelpWindow()">X</button>
+          <h2 class="text-white">Help Window</h2>
+          <p class="text-white">CloneMA, a GrandMA2/3 clone made with HTML, CSS and Javascript. You can find the full docs on the <a href="https://github.com/AkaMikeee" target="_blank">github</a></p>
+        </div>
+      </div>
+      <div id="right">
+        <div class="button-row">
+          <button class="actionButton" onclick="toggleSetupWindow()" id="setupButton">Setup</button>
+          <button class="actionButton" onclick="toggleHelpWindow()" id="helpButton">Help</button>
+          <button class="actionButton">Backup</button>
+        </div>
+        <br>
+        <div class="button-row">
+          <button class="actionButton" onclick="insertSequence()">Sequ</button>
+          <button class="actionButton">Cue</button>
+          <button class="actionButton" onclick="insertGoTo()">GoTo</button>
+        </div>
+        <div class="button-row">
+          <button class="actionButton">Channel</button>
+          <button class="actionButton" onclick="insertFixture()">Fixture</button>
+          <button class="actionButton">Group</button>
+        </div>
+        <div class="button-row">
+          <button class="actionButton">Oops</button>
+          <button class="actionButton" onclick="clearSequence()">Clear</button>
+          <button class="actionButton">Update</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Typing Bar -->
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

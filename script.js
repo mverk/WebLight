@@ -91,6 +91,8 @@ let selectedFixture = null;
         const targetSequence = Array.from(sequences).find(seq => seq.innerText === sequenceName);
         targetSequence.classList.add('selectedSequence');
         selectedSequence = targetSequence;
+      } else {
+        alert(`Could not find this Sequence`)
       }
     } else if (inputValue.toLowerCase().startsWith('setup')) {
       toggleSetupWindow();
@@ -109,6 +111,8 @@ let selectedFixture = null;
         const targetFixture = Array.from(ids).find(id => id.innerText === fixtureID);
         targetFixture.classList.add('selectedFixture');
         selectedFixture = targetFixture;
+      } else {
+        alert(`Could not find this Fixture`)
       }
     } else if (inputValue.toLowerCase().startsWith('clear')) {
       clearSequence();
@@ -135,6 +139,7 @@ let selectedFixture = null;
     }
   }
 
+
   function insertGoTo() {
     const input = document.getElementById('typerInput');
     input.value = 'goto ';
@@ -160,3 +165,27 @@ let selectedFixture = null;
   }
 
   document.getElementById('typerInput').addEventListener('keydown', handleKeyPress);
+
+function toggleDimmer() {
+  // Soon 👀
+}
+
+function toggleBeam() {
+  // Soon 👀
+}
+
+function togglePan() {
+  // Soon 👀
+}
+
+function toggleTilt() {
+  // Soon 👀
+}
+
+function toggleColor() {
+  // Soon 👀
+}
+
+function toggleGobo() {
+  // Soon 👀
+}
